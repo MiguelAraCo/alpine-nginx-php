@@ -9,10 +9,6 @@ RUN apk add --update \
 	supervisor && \
 	rm -rf /var/cache/apk/*
 
-RUN apk add --update \
-	bash && \
-	rm -rf /var/cache/apk/*
-
 RUN mkdir -p /run/nginx
 
 # Configure nginx
